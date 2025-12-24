@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- ITO ANG MOST IMPORTANT PARA SA MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Merry Christmas, Travelers!</title>
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>" type="image/svg+xml">
+    
+    <!-- CSS - PAGLALAGAYAN NATIN NG DIFFERENT STYLES -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+    
+    <!-- Snow -->
+    <div class="snow-container" id="snow-container"></div>
+    
+    <!-- Christmas Items -->
+    <div class="items-container" id="items-container"></div>
+    
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti-container"></div>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Christmas Gift (PERFECT TEXT - EXACT LIKE IMAGE) -->
+        <div class="gift-wrapper">
+            <div class="gift-border"></div>
+            <div class="border-text">
+                <!-- EXACT 3 LINES LIKE IMAGE -->
+                <div class="line1">Merry Christmas,</div>
+                <div class="line2">Travelers</div>
+                <div class="line3">May your wishes be granted this holiday season!</div>
+            </div>
+        </div>
+        
+        <!-- Christmas Tree (Confetti Effect Only) -->
+        <div class="tree" id="tree"></div>
+        
+        <!-- Characters -->
+        <div class="character-group">
+            <!-- Venti -->
+            <div class="character-card" id="venti-card">
+                <div class="char-glow"></div>
+                <div class="char-image-container">
+                    <div class="char-image" id="venti-normal" style="background-image: url('images/Venti.png');"></div>
+                    <div class="char-image alt" id="venti-drunk" style="background-image: url('images/DrunkVenti.png');"></div>
+                </div>
+                <div class="speech-bubble" id="venti-bubble">Inuman na guys,<br>nasan na ang<br>pulutan?</div>
+                <div class="char-name">Venti</div>
+            </div>
+            
+            <!-- Xiao -->
+            <div class="character-card" id="xiao-card">
+                <div class="char-glow"></div>
+                <div class="char-image-container">
+                    <div class="char-image" id="xiao-normal" style="background-image: url('images/Xiao.png');"></div>
+                    <div class="char-image alt" id="xiao-cute" style="background-image: url('images/CaringXiao.png');"></div>
+                </div>
+                <div class="speech-bubble" id="xiao-bubble">Cute ni Venti<br>kapag nalalasing</div>
+                <div class="char-name">Xiao</div>
+            </div>
+        </div>
+        
+        <!-- Wish Button -->
+        <div class="wish-section">
+            <button class="wish-btn" id="wish-btn">
+                <span style="font-size: 1.2em;">🎁</span>
+                <span>Make a Wish</span>
+            </button>
+        </div>
+        
+        <!-- Wish Message -->
+        <div class="wish-popup" id="wish-popup">
+            <div class="wish-content" id="wish-content"></div>
+            <button class="close-btn" id="close-btn">Close</button>
+        </div>
+        
+        <!-- Sender Notification -->
+        <div class="sender-notification" id="sender-notification">
+            ✨ Wish sent to the Archons!
+        </div>
+    </div>
+    
+    <!-- LINK TO EXTERNAL JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
